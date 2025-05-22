@@ -16,7 +16,7 @@
     </div>
     <nav>
       <a href="#">HOME</a>
-      <a href="#">SMART-ITEMS</a>
+      <a href="/html/smart-item.html">SMART-ITEMS</a>
       <a href="#">ABOUT-US</a>
       <a href="#">HOUSES</a>
     </nav>
@@ -62,6 +62,15 @@
     <button class="more-button">MORE</button>
   </section>
 
+  <script>
+    const cursor = document.querySelector(".cursor");
+  
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.left = e.clientX + "px";
+      cursor.style.top = e.clientY + "px";
+    });
+    </script>
+
   <!-- Footer -->
   <footer class="footer">
     <h3>Get In Touch</h3>
@@ -69,9 +78,9 @@
     <p>(559)-878-7362</p>
 
     <div class="footer-links">
-      <a href="home.html">HOME</a>
+      <a href="/html/">HOME</a>
       <a href="aboutme.html">ABOUT-US</a>
-      <a href="music.html">SMART-ITEMS</a>
+      <a href="/html/smart-item.html">SMART-ITEMS</a>
       <a href="car.html">HOUSES</a>
     </div>
 
