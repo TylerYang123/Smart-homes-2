@@ -14,8 +14,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  border-bottom: 2px solid #333;
+  padding: 10px 20px;
 }
 
 .logo {
@@ -23,7 +22,7 @@ header {
 }
 
 .logo img {
-  height: 50px;
+  height: 130px;
 }
 
 header nav a {
@@ -34,7 +33,7 @@ header nav a {
 }
 
 header nav a:hover {
-  text-decoration: underline;
+  text-decoration:underline;
 }
 
 
