@@ -2,11 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | T.Y Real Estate</title>
-  <link rel="stylesheet" href="/css/about-us.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>House for Sale | T.Y Real Estate</title>
+  <link rel="stylesheet" href="/css/houses.css" />
   <script src="/JavaScript/style.js" defer></script>
- 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #000000;
+    }
+
+    header {
+      background-color: #000000;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    .listing-container {
+      max-width: 1100px;
+      margin: 40px auto;
+      background-color: #5a5a5a;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .listing-header {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .listing-header h1 {
+      margin: 0;
+      color: #ffffff;
+    }
+
+    .listing-gallery img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .listing-details {
+      margin-top: 30px;
+    }
+
+    .listing-details h2 {
+      color: #ffffff;
+    }
+
+    .listing-details ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .listing-details ul li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #8d8d8d;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .cta-button:hover {
+      background-color: #454545;
+    }
+  </style>
 </head>
 <body>
 
@@ -23,79 +108,66 @@
     </nav>
   </header>
 
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>T.Y Real Estate</title>
-  <style>
-   
-
-    .header-left, .header-right {
-      display: flex;
-      gap: 10px;
-    }
-
-    .header-center img {
-      height: 80px;
-    }
-
-    .header-button {
-      background: none;
-      border: 2px solid white;
-      color: white;
-      padding: 10px 15px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    /* Main content */
-    .main-container {
-      display: flex;
-      padding: 30px;
-    }
-
-    .map {
-      flex: 1;
-    }
-
-    .map img {
-      width: 100%;
-      height: auto;
-      border: 2px solid white;
-    }
-
-    .gallery {
-      flex: 1;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-      padding-left: 30px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border: 2px solid white;
-    }
-  </style>
-</head>
-<body>
-
- 
-  <!-- Main content -->
-  <div class="main-container">
-    <div class="map">
-      <img src="/img/your-map.png" alt="World Map">
+  <!-- House Listing Content -->
+  <div class="listing-container">
+    <div class="listing-header">
+      <h1>Modern 4-Bedroom House in Beverly Hills</h1>
+      <p><strong>Price:</strong> $2,500,000</p>
     </div>
-    <div class="gallery">
-      <img src="/img/72001256007-3030 1_PhotoGrid.png" alt="House 1">
-      <img src="/img/raleigh-mansion 1_PhotoGrid.png" alt="House 2">
-      <img src="/img/image 10 (1) 1 (2)_PhotoGrid.png" alt="House 3">
-      <img src="/img/bigstock-New-Construction-Home-With-Low-166085261 1_PhotoGrid.png" alt="House 4">
+
+    <div class="listing-gallery">
+      <div class="slider">
+        <img class="slide" src="/img/72001256007-3030 1 (1)_PhotoGrid.png" alt="Exterior 1">
+        <img class="slide" src="/img/72033062007-30301 1_PhotoGrid.png" alt="Living Room">
+        <img class="slide" src="/img/72033063007-30302 1.png" alt="Backyard">
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+      </div>
+    </div>
+    
+
+    <div class="listing-details">
+      <h2>Property Details</h2>
+      <ul>
+        <li>✅ 4 Bedrooms</li>
+        <li>✅ 3 Bathrooms</li>
+        <li>✅ 2-Car Garage</li>
+        <li>✅ Swimming Pool</li>
+        <li>✅ Smart Home Features</li>
+        <li>✅ 3,500 sq ft</li>
+      </ul>
+
+      <a href="/html/contact-agent.html" class="cta-button">Contact Agent</a>
     </div>
   </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <footer>
+    <h3>Get In Touch</h3>
+    <p>Email: <a href="mailto:tyler.yang@student.cart.org">tyler.yang@student.cart.org</a></p>
+    <p>Phone: (559) 878-7362</p>
+
+    <div class="footer-links">
+      <a href="/html/home.html">Home</a>
+      <a href="/html/about-us.html">About Us</a>
+      <a href="/html/smart-item.html">Smart Items</a>
+      <a href="/html/houses.html">Houses</a>
+    </div>
+
+    <p>&copy; 2025 Tyler Yang. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>

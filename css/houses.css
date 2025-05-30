@@ -383,3 +383,46 @@
     height: auto;
     border: 2px solid white;
   }
+  .slider {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(120, 120, 120, 0.6);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5%;
+    z-index: 2;
+  }
+  
+  .slider .prev {
+    left: 10px;
+  }
+  
+  .slider .next {
+    right: 10px;
+  }
+  
+  .slider button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
