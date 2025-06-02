@@ -29,3 +29,10 @@ function handleSearch() {
   // Initial display
   showSlide(currentSlide);
 
+  window.addEventListener("load", () => {
+    // Wait 2 seconds, then redirect
+    setTimeout(() => {
+      window.location.href = "home.html"; // Replace with your real homepage URL
+    }, 2000); // Adjust time if needed
+  });
+  
